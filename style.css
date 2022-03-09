@@ -1,0 +1,81 @@
+* {
+  font-family: "Courier New";
+  font-weight: bold;
+  color: #fcd915;
+}
+
+body {
+  background: rgb(8, 8, 8);
+}
+
+#start-screen,
+#game-screen {
+  text-align: center;
+  overflow: hidden;  
+}
+
+#game-screen.show {
+  transition-delay: 1s;
+}
+
+.show {
+  max-height: 1000px;
+  transition-duration: 1s;
+  display: block;
+}
+
+.hide {
+  max-height: 0;
+  overflow: hidden;
+  transition-duration: 1s;
+}
+
+#start {
+  color: #00FF00;
+  background-color: black;
+  border: 2px solid #fcd915;
+  border-radius: 5px;
+  font-size: 3em;
+  display: block;
+  margin: 100px auto;
+}
+
+#start:hover {
+  cursor: pointer;
+  border: none;
+  background-color: #00FF00;
+  color: black;
+}
+
+#start:active,
+#start:focus {
+  outline: none;
+}
+
+#word-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#word-list > li {
+  padding: 5px;
+}
+
+#word-list > li.disabled {
+  color: #ccc;
+}
+
+#word-list > li:not(.disabled):hover {
+  color: yellow;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#text-topic {
+  color: #00FF00;
+}
+
+#guesses-remaining {
+  color: #00FF00;
+  
+}

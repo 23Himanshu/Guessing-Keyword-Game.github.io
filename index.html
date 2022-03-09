@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GuessingKeyWord</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="start-screen" class="show">
+
+    <pre>                                                                                           
+       ██████╗ ██╗   ██╗███████╗███████╗███████╗██╗███╗   ██╗ ██████╗     ██╗  ██╗███████╗██╗   ██╗██╗    ██╗ ██████╗ ██████╗ ██████╗ 
+      ██╔════╝ ██║   ██║██╔════╝██╔════╝██╔════╝██║████╗  ██║██╔════╝     ██║ ██╔╝██╔════╝╚██╗ ██╔╝██║    ██║██╔═══██╗██╔══██╗██╔══██╗
+      ██║  ███╗██║   ██║█████╗  ███████╗███████╗██║██╔██╗ ██║██║  ███╗    █████╔╝ █████╗   ╚████╔╝ ██║ █╗ ██║██║   ██║██████╔╝██║  ██║
+      ██║   ██║██║   ██║██╔══╝  ╚════██║╚════██║██║██║╚██╗██║██║   ██║    ██╔═██╗ ██╔══╝    ╚██╔╝  ██║███╗██║██║   ██║██╔══██╗██║  ██║
+      ╚██████╔╝╚██████╔╝███████╗███████║███████║██║██║ ╚████║╚██████╔╝    ██║  ██╗███████╗   ██║   ╚███╔███╔╝╚██████╔╝██║  ██║██████╔╝
+       ╚═════╝  ╚═════╝ ╚══════╝╚══════╝╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝     ╚═╝  ╚═╝╚══════╝   ╚═╝    ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═════╝ 
+                                                                                                                                      
+                                                                                                                                                                                                           
+    </pre>
+    <br>
+    <p>Guess The Correct Keyword From A List Of Keywords Given.</p>
+    <p>If You Went Wrong, We Will Provide You The Number Of Alphabets Correct.</p>
+    <br>
+    <button id="start">Start</button>
+  </div>
+  <div id="game-screen" class="hide">
+    <br>
+    <br>
+    <p id="text-topic">Click on a word to make a Guess</p>
+    <br>
+    <br>
+    <ul id="word-list"></ul>
+    
+    <p id="guesses-remaining"></p><br>
+    <p id="winner" class="hide">Congratulations! You win!  <a href="./index.html">PLAY AGAIN?</a></p>
+    <p id="loser" class="hide">Sorry, you lost.  <a href="./index.html">PLAY AGAIN?</a></p>
+  </div>
+  <script src="words.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
